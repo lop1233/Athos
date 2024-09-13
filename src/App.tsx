@@ -3,10 +3,12 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
 import Instagram from './components/instagram';
-import Selection from './components/Selection';
 import WhatsApp from './components/Whatsapp';
+import Esports from './pages/E-sports';
+import TeamsPage from './pages/Esportes';
+import AthosInfo from './pages/Home';
 import Home from './pages/Products';
-import TeamsPage from './pages/Teams';
+
 
  // Certifique-se de que o caminho está correto
 
@@ -15,9 +17,10 @@ const App: React.FC = () => (
     <div className="App">
       <Header />
       <Routes>
+        <Route path='/' element={<AthosInfo/>}/>
         <Route path="/products" element={<Home />} />
-        <Route path="/teams" element={<TeamsPage/>}/>
-        <Route path='/' element={<Selection/>}/>
+        <Route path="/esportes" element={<TeamsPage/>}/>
+        <Route path="/e-sports" element={<Esports/>}/>
       </Routes>
       <WhatsApp /> 
       <Instagram/>

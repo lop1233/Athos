@@ -5,9 +5,7 @@ import '/home/luiz/Documentos/Projetos/testes/Athos/e-sports-team/src/styles/Tea
 const teams = [
   { name: 'Futsal', logoUrl: '/icons8-futsal-100.png', description: 'Time de Futsal da nossa atlética.' },
   { name: 'Vôlei', logoUrl: '/volleyball-player.png', description: 'Time de Vôlei com grandes jogadores.' },
-  { name: 'CS', logoUrl: '/cs.png', description: 'Equipe competitiva de Counter-Strike.' },
-  { name: 'LOL', logoUrl: '/lol.png', description: 'Time de League of Legends com jogadores experientes.' },
-  { name: 'Valorant', logoUrl: '/valorant.png', description: 'Equipe de Valorant em alta performance.' }
+ 
 ];
 
 const TeamsPage: React.FC = () => (

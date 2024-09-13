@@ -14,8 +14,8 @@ header {
   color: black;
   text-align: center;
   padding: 1.5rem; /* Mais espaçamento para relaxar o layout */
-  border-bottom-left-radius: 50px; /* Bordas arredondadas suaves */
-  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 0px; /* Bordas arredondadas suaves */
+  border-bottom-right-radius: 0px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
 }
 

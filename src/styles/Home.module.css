@@ -1,0 +1,88 @@
+/* Home.module.css */
+html {
+  scroll-behavior: smooth; /* Rolagem suave para todo o site */
+}
+/* Estilo para o texto geral */
+.infoSection {
+  width: 80%;
+  margin: 0 auto; /* Centralizar o conteúdo */
+  padding: 2rem 0;
+  line-height: 1.6;
+  color: #f0e68c; /* Cor dourada suave para o texto */
+}
+
+/* Estilo das seções */
+.section {
+  margin-bottom: 3rem;
+  position: relative; /* Para posicionamento das imagens */
+}
+
+/* Títulos */
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #b8860b; /* Dourado escuro para os títulos */
+  text-align: center;
+}
+
+/* Descrição */
+.description {
+  font-size: 1.2rem;
+  text-align: justify;
+  color: #f0e68c; /* Cor dourada suave para o texto */
+}
+
+/* Imagens */
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 2rem auto; /* Centralizar imagem */
+}
+
+.imageWrapper img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra escura para profundidade */
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  float: left; /* Faz com que o texto flua ao redor da imagem */
+  margin-right: 1rem; /* Espaço entre a imagem e o texto */
+  margin-bottom: 1rem; /* Espaço inferior para separar imagens */
+}
+
+.imageWrapper img:hover {
+  transform: scale(1.08); /* Aumentar um pouco a imagem */
+  opacity: 0.95; /* Suave efeito de opacidade */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8); /* Sombra mais intensa ao passar o mouse */
+}
+
+/* Efeitos quando passar pela imagem */
+.imageWrapper img:active {
+  transform: scale(1.1); /* Aumenta um pouco mais ao clicar */
+}
+
+/* Navegação */
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0rem;
+  background-color: #000; /* Fundo preto para a navegação */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav a {
+  color: #f0e68c; /* Cor dourada para os links */
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 5px; /* Bordas arredondadas nos links */
+}
+
+.nav a:hover {
+  color: #b22222; /* Vermelho escuro ao passar o mouse */
+  background-color: #333; /* Fundo mais escuro no hover */
+}

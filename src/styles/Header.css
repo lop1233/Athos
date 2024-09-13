@@ -1,0 +1,73 @@
+/* Estilos gerais do header */
+.header {
+  display: flex;
+  align-items: center; /* Alinha itens verticalmente */
+  padding: 10px 20px;
+  background-color: #6e1d13;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: padding 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilos para o cabeçalho pequeno */
+.header-small {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: #6e1d13;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo */
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-right: 20px; /* Espaçamento entre o logo e a navegação */
+}
+
+.logo-image {
+  width: 80px;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito de hover no logo */
+.logo-image:hover {
+  transform: scale(1.05); /* Efeito de aumento leve no hover */
+  box-shadow: 0 4px 8px rgba(255, 215, 0, 0.6); /* Sombra dourada no hover */
+}
+
+/* Título */
+h1 {
+  font-size: 24px;
+  color: #ffffff;
+  font-family: 'Pirata One', cursive;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para a navegação */
+.nav {
+  display: flex;
+  align-items: center; /* Alinha verticalmente com o logo */
+  margin-left: 20px; /* Espaçamento entre o logo e a navegação */
+}
+
+.nav-link {
+  color: gold; /* Cor dos links em dourado */
+  text-decoration: none; /* Remove sublinhado */
+  margin: 0 15px; /* Espaçamento entre os links */
+  font-size: 18px; /* Tamanho da fonte dos links */
+}
+
+.nav-link.active {
+  font-weight: bold; /* Negrito para o link ativo */
+}
+
+.nav-link:hover {
+  text-decoration: underline; /* Sublinhado no hover */
+}

@@ -1,0 +1,29 @@
+/* src/Instagram.css */
+.instagram-button {
+    position: fixed; /* Fixa o botão na tela */
+    bottom: 20px; /* Distância da parte inferior da tela */
+    right: 20px; /* Distância da parte direita da tela */
+    background-color: #e1306c; /* Cor do Instagram */
+    color: white;
+    text-decoration: none;
+    padding: 1rem; /* Ajuste o padding para um tamanho menor */
+    border-radius: 30px; /* Bordas bem arredondadas para ficar parecido com o WhatsApp */
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para dar um efeito de profundidade */
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 20px; /* Tamanho do ícone igual ao do WhatsApp */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Garante que o botão fique sobre outros conteúdos */
+    width: 50px; /* Define uma largura fixa igual ao do WhatsApp */
+    height: 50px; /* Define uma altura fixa igual ao do WhatsApp */
+    text-align: center; /* Alinha o texto centralizado */
+    line-height: 50px; /* Alinha o texto verticalmente no centro */
+  }
+  
+  .instagram-button:hover {
+    background-color: #c13584; /* Cor mais escura do Instagram para hover */
+    transform: translateY(-3px); /* Ajuste o efeito de hover para ser consistente com o WhatsApp */
+  }
+  

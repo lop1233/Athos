@@ -1,0 +1,83 @@
+/* Estilos para a página de times */
+.teams-page {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #2c2c2c; /* Fundo cinza escuro */
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #d4af37; /* Dourado para os títulos */
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Pirata One', cursive; /* Fonte estilo pirata */
+  }
+  
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .team-card {
+    background-color: #3c3c3c; /* Fundo mais claro para os cartões */
+    border: 1px solid #d4af37; /* Borda dourada */
+    border-radius: 15px; /* Bordas arredondadas */
+    padding: 20px;
+    text-align: center;
+    width: 220px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .team-card:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra mais intensa no hover */
+  }
+  
+  .team-logo {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    color: #d4af37;
+    margin: 10px 0;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #ddd; /* Texto em cinza claro */
+    margin-bottom: 15px;
+  }
+  
+  .view-more, .register {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .view-more {
+    background-color: #3498db; /* Cor para "Ver mais" */
+  }
+  
+  .view-more:hover {
+    background-color: #2980b9; /* Hover para "Ver mais" */
+  }
+  
+  .register {
+    background-color: #e74c3c; /* Cor para "Registrar-se" */
+  }
+  
+  .register:hover {
+    background-color: #c0392b; /* Hover para "Registrar-se" */
+  }
+  

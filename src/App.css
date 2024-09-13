@@ -1,38 +1,171 @@
-.App {
+/* Estilos Gerais */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1b1b1b; /* Preto para fundo */
+  color: #d4af37; /* Dourado para o texto */
+  min-height: 100vh; /* Garante que o fundo cobre a altura total da tela */
+}
+
+/* Cabeçalho */
+header {
+  background-color: #d4af37; /* Dourado para o cabeçalho */
+  color: black;
   text-align: center;
+  padding: 1.5rem; /* Mais espaçamento para relaxar o layout */
+  border-bottom-left-radius: 50px; /* Bordas arredondadas suaves */
+  border-bottom-right-radius: 50px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Navegação */
+nav {
+  background-color: #000000; /* Preto para o nav */
+  padding: 1rem;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  border-bottom: 2px solid #d4af37;
+}
+
+nav a {
+  color: #d4af37; /* Dourado para links */
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px; /* Bordas arredondadas */
+  font-weight: bold;
+}
+
+/* Remove os efeitos de transição para links de navegação */
+nav a:hover {
+  background-color: #b30000; /* Vermelho escuro para hover */
+}
+
+nav a.active {
+  background-color: #b30000; /* Vermelho escuro para link ativo */
+}
+
+/* Conteúdo principal */
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #2c2c2c; /* Cinza escuro para o fundo principal */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Sombra mais suave */
+  border-radius: 15px; /* Bordas arredondadas */
+}
+
+/* Títulos */
+h1, h2 {
+  color: #d4af37; /* Dourado para títulos */
+  font-family: 'Pirata One', cursive; /* Fonte com estilo pirata */
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Texto de produtos */
+#products-text {
+  text-align: center;
+  color: #d4af37; /* Dourado para o texto */
+  margin-bottom: 2rem;
+}
+
+/* Lista de produtos */
+#products {
+  list-style: none; /* Remove os marcadores da lista */
+  padding: 0;
+}
+
+.product {
+  border: 2px solid #d4af37; /* Borda dourada */
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #2c2c2c; /* Fundo escuro para os produtos */
+  color: #d4af37; /* Texto dourado */
+  border-radius: 15px; /* Bordas arredondadas */
+  margin-bottom: 1rem; /* Espaçamento entre produtos */
+  transition: transform 0.3s, box-shadow 0.3s; /* Transição suave para efeitos */
+}
+
+.product:hover {
+  transform: scale(1.05); /* Aumenta ao passar o mouse */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
+}
+
+/* Botão de compra */
+.buy-button {
+  background-color: #b30000;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 15px; /* Bordas arredondadas */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.buy-button:hover {
+  background-color: #ff0000;
+  transform: scale(1.1); /* Leve aumento ao passar o mouse */
+}
+
+.buy-button:active {
+  transform: scale(0.95); /* Efeito de clique */
+}
+
+.whatsapp-button {
+  display: inline-block;
+  background-color: #25D366; /* Cor do WhatsApp */
+  color: white;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 30px; /* Bordas bem arredondadas */
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 50px; /* Define uma largura fixa */
+  height: 50px; /* Define uma altura fixa */
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 20px; /* Tamanho do ícone */
+  position: fixed; /* Fixa o botão na tela */
+  bottom: 80px; /* Distância do fundo (ajuste conforme necessário) */
+  right: 20px; /* Distância da borda direita da tela */
+  z-index: 1000; /* Garante que o botão fique sobre outros conteúdos */
+}
+
+.whatsapp-button:hover {
+  background-color: #128C7E; /* Cor mais escura do WhatsApp para hover */
+  transform: translateY(-3px);
+}
+
+/* Botão do Instagram */
+.instagram-button {
+  position: fixed; /* Fixa o botão na tela */
+  bottom: 20px; /* Distância da parte inferior da tela */
+  right: 20px; /* Distância da parte direita da tela */
+  background-color: #e1306c; /* Cor do Instagram */
   color: white;
+  text-decoration: none;
+  padding: 1rem; /* Ajustado para ter o mesmo padding que o do WhatsApp */
+  border-radius: 30px; /* Bordas arredondadas para corresponder ao botão do WhatsApp */
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra semelhante ao botão do WhatsApp */
+  transition: background-color 0.3s, transform 0.2s;
+  width: 50px; /* Define a largura fixa para igualar o botão do WhatsApp */
+  height: 50px; /* Define a altura fixa para igualar o botão do WhatsApp */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px; /* Tamanho do ícone para igualar o botão do WhatsApp */
 }
 
-.App-link {
-  color: #61dafb;
+/* Efeito de hover no botão do Instagram */
+.instagram-button:hover {
+  background-color: #c13584; /* Cor mais escura do Instagram para hover */
+  transform: translateY(-3px); /* Ajusta o efeito de hover para corresponder ao do WhatsApp */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+

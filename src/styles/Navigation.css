@@ -1,0 +1,31 @@
+/* Estilos para a navegação */
+.nav {
+  display: flex;
+  align-items: center; /* Alinha verticalmente com o logo */
+  margin-left: 20px; /* Espaçamento entre o logo e a navegação */
+  background-color: transparent; /* Remove qualquer fundo da navegação */
+}
+
+.nav-link {
+  color: gold; /* Cor dos links em dourado */
+  text-decoration: none; /* Remove sublinhado */
+  margin: 0 15px; /* Espaçamento entre os links */
+  font-size: 18px; /* Tamanho da fonte dos links */
+  background-color: transparent; /* Remove fundo dos links */
+  padding: 5px; /* Espaçamento interno para tornar o link clicável */
+  border: none; /* Remove bordas */
+  transition: color 0.3s ease, text-decoration 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves para cor, sublinhado, transformação e sombra */
+}
+
+/* Link ativo */
+.nav-link.active {
+  font-weight: bold; /* Negrito para o link ativo */
+}
+
+/* Efeito de hover */
+.nav-link:hover {
+  color: #ffd700; /* Alterar cor do texto no hover para garantir visibilidade */
+  text-decoration: underline; /* Sublinhado no hover */
+  transform: scale(1.05); /* Aumento leve no hover */
+  box-shadow: 0 2px 4px rgba(255, 215, 0, 0.5); /* Sombra dourada no hover */
+}
